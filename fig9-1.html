@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <h3>"Pimp My Shoes" Contest Entry Form</h3>
+    <p>Want to trade in your old sneakers for a custom pair of Forcefields?<br> Make a case for why your shoes have got to go and you may be <br> one of ten lucky winners</p>
+    <br>
+    <p>Contest Entry Information</p>
+    <form action="http://www.learningwebdesign.com/contest.php" method="post">
+        <ul>
+            <li>Name: <input type="text" name="name"></li>
+            <li>Email: <input type="email" name="email" pattern="\D@\D"></li>
+            <li>Phone: <input type="tel" name="phone" pattern="\d{9}"></li>
+        </ul>
+        <p>My shoes are SO old...</p>
+        <textarea name="story" rows="4" cols="60" maxlength="300" placeholder="No more than 300 characters long"></textarea>
+        <br><br>
+        <strong>Design your custom Forcefields:</strong>
+        <p>Custom shoe design</p>
+        <br>
+        <p>Color (choose one):</p>
+        <ul>
+            <li><input type="radio" name="color" value="red">Red</li>
+            <li><input type="radio" name="color" value="blue">Blue</li>
+            <li><input type="radio" name="color" value="black">Black</li>
+            <li><input type="radio" name="color" value="silver">Silver</li>
+        </ul>
+        <br>
+        <p>Features (choose as many as you want):</p>
+        <ul>
+            <li><input type="checkbox" name="features[]" value="laces">Sparkley laces</li>
+            <li><input type="checkbox" name="features[]" value="logo" checked>Metallic logo</li>
+            <li><input type="checkbox" name="features[]" value="heels">Light-up heels</li>
+            <li><input type="checkbox" name="features[]" value="mp3">MP3-enabled</li>
+        </ul>
+        <br>
+        <p>Size (sizes reflect men's sizing):</p>
+
+        <select name="size" size="1">
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+  <option>13</option>
+</select>
+
+
+
+        <p><input type="submit" value="Pimp my shoes!">
+            <input type="reset"></p>
+    </form>
+
+    </form>
+
+
+</body>
+
+</html>
